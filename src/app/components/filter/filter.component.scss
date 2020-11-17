@@ -1,0 +1,39 @@
+@import '../../../assets/variables.scss';
+
+:host {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  z-index: 999;
+
+  .filter {
+    display: flex;
+    flex-wrap: nowrap;
+
+    label {
+      margin-left: 60px;
+    }
+
+    select {
+      border: none;
+      border-bottom: 2px solid $gray;
+      margin-left: 10px;
+    }
+
+    button {
+      background-color: $green;
+      color: white;
+      border: none;
+      margin-left: 60px;
+      padding: 0px 20px;
+      border-radius: 4px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
+}

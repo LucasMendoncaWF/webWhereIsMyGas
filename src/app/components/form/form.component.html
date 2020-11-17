@@ -1,0 +1,32 @@
+
+<div class="bg">
+  <form (submit)="sendInfo($event)">
+    <div class="close" (click)="closeModal()">x</div>
+    <div class="field">
+      <label>Marca:</label>
+      <input name="marcaVeiculo" (keyup)="editField($event)" type="text" required/>
+    </div>
+
+    <div class="field">
+      <label>Modelo:</label>
+      <input name="modeloVeiculo" (keyup)="editField($event)" type="text" required/>
+    </div>
+
+    <div class="field">
+      <label>Combustivel:</label>
+      <select name="tipoCombustivel" (change)="editField($event)" required>
+        <option value="" disabled></option>
+        <option>GASOLINA</option>
+        <option>ETANOL</option>
+        <option>ÁLCOOL</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Consumo:</label>
+      <input name="consumoVeiculo" (keyup)="editField($event)" type="number" min="0" required/>
+    </div>
+
+    <button type="submit" class="send">Enviar</button>
+  </form>
+</div>

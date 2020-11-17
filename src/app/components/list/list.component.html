@@ -1,0 +1,12 @@
+<div class="list">
+  <table>
+    <thead>
+      <td *ngFor="let key of keys">{{key}}</td>
+      <td *ngIf="deleteUrl"></td>
+    </thead>
+    <tr *ngFor="let data of info">
+      <td *ngFor="let key of keys">{{ data[key] }}</td>
+      <td *ngIf="deleteUrl" class="delete" (click)="delete(data[keys[0]])">Deletar</td>
+    </tr>
+  </table>
+</div>

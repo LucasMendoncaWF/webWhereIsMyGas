@@ -1,0 +1,30 @@
+@import '../../../assets/variables.scss';
+
+header {
+  background-color: $green;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 16px;
+  float: right;
+
+  .link {
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

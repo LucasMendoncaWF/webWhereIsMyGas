@@ -1,0 +1,41 @@
+@import '../../../assets/variables.scss';
+
+.profile-bg {
+  width: 100%;
+  height: calc(100vh - 85px);
+  background-color: white;
+
+  .profile {
+    width: calc(100% - 80px);
+    height: calc(100vh - 85px - 100px);
+    background-color: white;
+    padding: 40px;
+
+    .session {
+      margin-bottom: 80px;
+    }
+
+    .add {
+      background-color: $green;
+      color: white;
+      padding: 10px 15px;
+      margin: 10px 2px;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    .session-title{
+      margin-bottom: 20px;
+      font-size: 25px;
+      color: black;
+    }
+
+    .text {
+      color: black;
+      margin-bottom: 10px;
+    }
+
+  }
+}

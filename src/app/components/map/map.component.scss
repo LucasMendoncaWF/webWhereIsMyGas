@@ -1,0 +1,9 @@
+.map-area {
+  overflow: hidden;
+  position: relative;
+
+  #map {
+    width: 100vw;
+    height: calc(100vh - 85px);
+  }
+}

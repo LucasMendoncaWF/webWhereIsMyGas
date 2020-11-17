@@ -1,0 +1,22 @@
+<div class="profile-bg">
+  <div class="profile">
+  
+    <div class="user-data session">
+      <div class="session-title">Perfil</div>
+      <div class="text">Nome: Lucas Fiap</div>
+      <div class="text">Local atual: São Paulo</div>
+    </div>
+
+    <div class="veihicles list session">
+      <div class="session-title">Veículos</div>
+      <app-list *ngIf="vehicles.length" [info]="vehicles" [deleteUrl]="'veiculo'"></app-list>
+      <button class="add" (click)="showForm()">Adicionar veículo</button>
+    </div>
+
+    <div class="travels list session">
+      <div class="session-title">Viagens</div>
+      <app-list *ngIf="travels.length" [info]="travels"></app-list>
+    </div>
+  </div>
+</div>
+<app-form *ngIf="isShowingForm" (close)="closeModal($event)"></app-form>

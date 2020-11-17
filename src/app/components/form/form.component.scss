@@ -1,0 +1,58 @@
+@import '../../../assets/variables.scss';
+
+.bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+
+  form {
+    width: calc(400px - 40px);
+    background-color: white;
+    padding: 20px;
+    margin-left: calc(50% - 200px);
+    margin-top: 100px;
+    position: relative;
+  }
+
+  .close {
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+
+  label {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  select, input {
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid $gray;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  .send {
+    background-color: $green;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 2px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+}

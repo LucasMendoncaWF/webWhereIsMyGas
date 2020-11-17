@@ -1,0 +1,28 @@
+<form class="filter" (submit)="filterInfo($event)">
+  <div class="field">
+    <label>Veículo:</label>
+    <select>
+      <option value="" disabled></option>
+      <option *ngFor="let option of vehicleOptions" [value]="option.idVeiculo">{{ option.marcaVeiculo }} {{ option.modeloVeiculo }}</option>
+    </select>
+  </div>
+  <div class="field">
+    <label>Combustível:</label>
+    <select>
+      <option value="" disabled></option>
+      <option>Gasolina</option>
+      <option>Etanol</option>
+      <option>Álcool</option>
+    </select>
+  </div>
+  <div class="field">
+    <label>Distância:</label>
+    <select>
+      <option value="" disabled></option>
+      <option>0 a 5km</option>
+      <option>5 a 10km</option>
+      <option>10 a 15km</option>
+    </select>
+  </div>
+  <button type="submit">Buscar</button>
+</form>
